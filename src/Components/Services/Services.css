@@ -1,90 +1,122 @@
 
 
-.services-main-container{
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    border: 2px solid whitesmoke;
-    padding: 70px;
-    margin-top: 30px;
-
+@media only screen and (min-width:788px) {
+    .services-main-container{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        border: 2px solid whitesmoke;
+        padding: 70px;
+        margin-top: 30px;
+    
+    }
+    
+    .service-image-container img{
+    
+        width: 400px;
+        height: 400px;
+        padding-right: 40px;
+    
+    }
+    
+    .service-description{
+        text-align: justify;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 400px;
+    }
+    
+    .service-check-button{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    
+    .service-fee{
+        font-size: 22px;
+        color: tomato;
+        font-weight: 800;
+    }
+    
+    .fee-value{
+        font-size: 18px;
+        font-weight:600 ;
+    }
+    
+    
+    .service-check-button button{
+    
+        border: none;
+        cursor: pointer;
+        background-color: tomato;
+        color: whitesmoke;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    .services-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .service-h-image img{
+        width: 100vw;
+        height: 300px;
+    
+    
+    }
+    
+    .service-h-image {
+        position: relative;
+    }
+    
+    .service-name h2{
+        position: absolute;
+        top: 190px;
+        left: 60px;
+        font-size: 50px;
+        color: tomato;
+    
+    
+    
+    }
+    
+  
+    
+    
+    .service-doctor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 60px;
+        margin-bottom: 70px;
+    
+    
+    }
+    
+    .doctors-container h4{
+        font-size: 40px;
+        color: #0F2B51;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
 }
 
-.service-image-container img{
-
-    width: 400px;
-    height: 400px;
-    padding-right: 40px;
-
-}
-
-.service-description{
-    text-align: justify;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 400px;
-}
-
-.service-check-button{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-
-.service-fee{
-    font-size: 22px;
-    color: tomato;
-    font-weight: 800;
-}
-
-.fee-value{
-    font-size: 18px;
-    font-weight:600 ;
-}
-
-
-.service-check-button button{
-
-    border: none;
-    cursor: pointer;
-    background-color: tomato;
-    color: whitesmoke;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-}
-
-.services-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.service-h-image img{
-    width: 100vw;
-    height: 300px;
-
-
-}
-
-.service-h-image {
-    position: relative;
-}
-
-.service-name h2{
-    position: absolute;
-    top: 190px;
-    left: 60px;
-    font-size: 50px;
-    color: tomato;
 
 
 
-}
+/* common part  */
 
 .service-check-button button:hover{
-
+    
     background-color: rgba(255, 99, 71, 0.685);
 
 
@@ -92,23 +124,109 @@
 }
 
 
-.service-doctor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 60px;
-    margin-bottom: 70px;
 
 
-}
 
-.doctors-container h4{
-    font-size: 40px;
-    color: #0F2B51;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+/* phone responsive */
+@media screen and (max-width:788px) {
+    .services-main-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: center; */
+        border: 2px solid whitesmoke;
+         /* padding: 70px; */
+
+         margin-top: 30px;  
+    
+    }
+
+
+    .service-image-container img{
+        width: 100vw;
+    }
+
+     
+    .service-description{
+        text-align: justify;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding: 20px;
+        /* width: 400px; */
+    }
+    .service-check-button button{
+    
+        border: none;
+        cursor: pointer;
+        background-color: tomato;
+        color: whitesmoke;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .service-check-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    
+    }
+    
+    
+    .service-fee{
+        font-size: 20px;
+        color: tomato;
+        font-weight: 800;
+    }
+    .service-doctor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 60px;
+        margin-bottom: 70px;
+    
+    
+    }
+    .doctors-container h4{
+        font-size: 30px;
+        color: #0F2B51;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .service-info .service-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-h-image img{
+        width: 100vw;
+        height: 200px;
+    
+    
+    }
+    
+    .service-h-image {
+        position: relative;
+    }
+    
+     .service-name h2{
+        position: absolute;
+        top: 0px;
+        left: 60px;
+        font-size: 30px;
+        color: tomato;
+    
+    
+    
+    }
+  
+    
 }

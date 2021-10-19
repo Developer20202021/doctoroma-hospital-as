@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuthContext from '../AuthContext/useAuthContext';
 import './Header.css';
@@ -19,6 +19,16 @@ const Header = () => {
     const logOutUser = ()=>{
         logOut();
         
+    }
+
+
+
+
+
+    const [toggle, setToogle] = useState(1);
+
+    const toogleBtn = (number)=>{
+        setToogle(number)
     }
 
 
@@ -63,8 +73,30 @@ const Header = () => {
 
 
 
-</div>
+                <div className="tooggleicon">
+                    {toggle===1? <span onClick={()=>toogleBtn(2)}><i class="fas fa-bars"></i></span>:<span onClick={()=>toogleBtn(1)}><i class="fas fa-times"></i></span>}
+                
+                </div>
+
+
+
             </div>
+            {toggle===2?  <div className="phone-link-container">
+                 {user.photoURL?<img src={user.photoURL} alt="" width='50px' height='50px' />:null}
+                  {!user?.displayName?<span className='user-email'>{user.email}</span>:<span className='user-email'>{user.displayName}</span>}
+                    <NavLink to='/home'>Home</NavLink>
+                    <NavLink  to='/gallery'>Gallery</NavLink>
+                    <NavLink  to='/contact'>Contact</NavLink>
+                   
+                   
+
+                    
+                    {user?.email?<button className='logOutBtn' onClick={logOutUser}>Log Out</button>: <NavLink to='/login'>Log In</NavLink>}
+                   
+                </div>:null}
+            </div>
+            
+           
             
         </div>
     );

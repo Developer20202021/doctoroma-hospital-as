@@ -150,7 +150,7 @@ const registration =()=>{
 
 
                 <div className="logIn-form">
-                    <h3>Log In</h3>
+                    <h3 className='loginPageHeaderTitle'>Log In</h3>
 
                 <div className="email">
                     <label htmlFor="">Email</label> <br />
@@ -172,7 +172,7 @@ const registration =()=>{
                 {toggle==2?
 
                 <div className="register-form">
-                    <h3>Register</h3>
+                    <h3 className='loginPageHeaderTitle'>Register</h3>
                 <div className="email">
                     <label htmlFor="">Email</label> <br />
                     <input onChange={getEmail} type="email" name="email" id="" placeholder='Email'/>

@@ -11,7 +11,7 @@ export const NewAuthContext = createContext();
 
 const AuthContext = ({children}) => {
 
-    console.log(children);
+
         const firebaseAction = FirebaseAuthentication();
 
 

@@ -18,6 +18,9 @@ const FirebaseAuthentication = ()=>{
     const history = useHistory();
     
 
+   
+    
+
     const auth = getAuth();
 
 
@@ -111,22 +114,21 @@ const FirebaseAuthentication = ()=>{
 
 
 
-
     useEffect(()=>{
 
         onAuthStateChanged(auth, (user)=>{
             if (user) {
                 setUser(user);
+               
             }
             else{
-                console.log('user log out');
+                setUser('');
             }
         })   
 
 
 
     },[])
-
 
 
 

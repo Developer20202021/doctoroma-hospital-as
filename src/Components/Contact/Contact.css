@@ -1,4 +1,8 @@
 
+
+
+@media screen  and (min-width:788px) {
+
 .map iframe{
     border: none;
 }
@@ -95,4 +99,133 @@
     font-size: 22px;
     color: tomato;
     margin-right: 20px;
+}
+
+}
+
+
+
+
+/* common part  */
+
+
+
+
+
+/* phone eresponsive  */
+
+@media only screen and (max-width:788px) {
+
+.map iframe{
+    border: none;
+}
+
+.map {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 90px;
+  
+}
+
+.contact-more-info{
+    text-align: justify;
+    /* width: 400px; */
+    padding: 20px;
+    /* margin-right: 50px; */
+    
+}
+
+.contact-form input[type='text']{
+
+    width: 300px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.contact-form textarea{
+    width: 300px;
+    height: 300px;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgb(190, 190, 190);
+
+}
+.contact-form label span{
+    font-size: 18px;
+   text-align: start;
+}
+
+.contact-form input[type='text']::placeholder{
+ font-size: 18px;
+}
+
+.contact-title h2{
+
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: gray;
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-more-info{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactInfo h2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: gray;
+}
+
+.contact-send-btn button{
+    width: 300px;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    background-color: rgb(248, 89, 31);
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius:5px ;
+
+}
+
+.contactInfo p{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailIcon, .phoneNumberIcon, .locationIcon{
+    font-size: 22px;
+    color: tomato;
+    margin-right: 20px;
+}
+
 }

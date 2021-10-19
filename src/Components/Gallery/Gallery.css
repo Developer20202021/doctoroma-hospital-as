@@ -1,4 +1,9 @@
 
+
+
+@media only screen and (min-width:788px) {
+    
+
 .gallery-header-image-container img{
     width: 100%;
     height: 300px;
@@ -70,4 +75,100 @@
 }
 .oneGalleryCard{
     width: 300px;
+}
+
+}
+
+
+
+
+/* common part */
+
+
+
+
+
+
+
+
+
+
+/* Phone responsive  */
+@media only screen and (max-width:788px) {
+    
+
+.gallery-header-image-container img{
+    width: 100%;
+    height: 200px;
+}
+
+.gallery-header-image-container{
+    position: relative;
+}
+.gallery-title{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 47px;
+    color: tomato;
+    
+}
+
+.subGallery-title-link ul li{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.subGallery-title-link ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+   
+}
+.subGallery-title-link ul li a{
+    text-decoration: none;
+    color: gray;
+}
+.subGallery-title-link ul li a:hover{
+    border-bottom: 3px solid rgb(252, 81, 51);
+}
+
+
+.gallery-img img{
+    width: 300px;
+
+
+}
+.gallery-img img:hover{
+    filter: grayscale(100);
+  
+    cursor: pointer;
+
+}
+
+.services-title p{
+    font-size: 18px;
+    text-align: left;
+    color: #3A5F9B;
+    font-weight: 600;
+}
+.gallery-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.our-gallery-card{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.oneGalleryCard{
+    width: 300px;
+}
+
 }

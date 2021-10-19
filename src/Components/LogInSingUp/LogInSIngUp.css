@@ -1,145 +1,183 @@
 
 
-.logIn-singUp-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    border: 5px solid whitesmoke;
-    padding: 30px;
-    border-radius: 10px;
+
+    .logIn-singUp-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        border: 5px solid whitesmoke;
+        padding: 30px;
+        border-radius: 10px;
+        
+        
+    }
+    
+    .logIn-singUp-header-link {
+    
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .logIn-singUp-header-link ul li{
+        list-style: none;
+    
+    }
     
     
-}
+    .logIn-singUp-header-link  button{
+        border: none;
+        background-color: rgb(5, 5, 5);
+        width: 130px;
+        height: 40px;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-size: 18px;
+        cursor: pointer;
+    
+    
+    }
+    
+    .logIn-singUp-header-link  button:hover{
+        background-color: rgb(114, 111, 111);
+    }
+    
+    .register-form input[type='email'], .register-form input[type='password']{
+    
+       width: 250px;
+       height: 37px;
+       outline: none;
+       border: 2px solid gray;
+       margin-bottom: 20px;
+       border-radius: 5px;
+    
+    
+    }
+    .register-form label{
+        font-size: 18px;
+    }
+    
+    
+    .register-form input[type='email']::placeholder, .register-form input[type='password']::placeholder{
+    
+        font-size: 18px;
+        padding-left: 5px;
+    
+    }
+    .logIn-form input[type='email'], .logIn-form input[type='password']{
+    
+       width: 250px;
+       height: 37px;
+       outline: none;
+       border: 2px solid gray;
+       margin-bottom: 20px;
+       border-radius: 5px;
+    
+    
+    }
+    .register-form label{
+        font-size: 18px;
+    }
+    .logIn-form label{
+        font-size: 18px;
+    }
+    
+    
+    .register-form input[type='email']::placeholder, .register-form input[type='password']::placeholder{
+    
+        font-size: 18px;
+        padding-left: 5px;
+    
+    }
+    .logIn-form input[type='email']::placeholder, .logIn-form input[type='password']::placeholder{
+    
+        font-size: 18px;
+        padding-left: 5px;
+    
+    }
+    
+    .logIn-btn button{
+        width: 250px;
+        height: 40px;
+        border: none;
+        background-color: #0B77ED;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-size: 18px;
+        cursor: pointer;
+    
+    }
+    
+    .loginPageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    
+    
+    .errorMsg{
+        font-size: 17px;
+        font-weight: 600;
+        color: red;
+    }
+    
+    .google-login-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .singInTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .google-icon img{
+        border-radius: 50%;
+        border: 5px solid whitesmoke;
+        cursor: pointer;
+    }
 
-.logIn-singUp-header-link {
-
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.logIn-singUp-header-link ul li{
-    list-style: none;
-
-}
 
 
-.logIn-singUp-header-link  button{
-    border: none;
-    background-color: rgb(5, 5, 5);
-    width: 130px;
-    height: 40px;
-    border-radius: 10px;
-    color: whitesmoke;
-    font-size: 18px;
-    cursor: pointer;
+
+    .loginPageHeaderTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    
 
 
-}
-
-.logIn-singUp-header-link  button:hover{
-    background-color: rgb(114, 111, 111);
-}
-
-.register-form input[type='email'], .register-form input[type='password']{
-
-   width: 250px;
-   height: 37px;
-   outline: none;
-   border: 2px solid gray;
-   margin-bottom: 20px;
-   border-radius: 5px;
 
 
-}
-.register-form label{
-    font-size: 18px;
-}
 
 
-.register-form input[type='email']::placeholder, .register-form input[type='password']::placeholder{
-
-    font-size: 18px;
-    padding-left: 5px;
-
-}
-.logIn-form input[type='email'], .logIn-form input[type='password']{
-
-   width: 250px;
-   height: 37px;
-   outline: none;
-   border: 2px solid gray;
-   margin-bottom: 20px;
-   border-radius: 5px;
 
 
-}
-.register-form label{
-    font-size: 18px;
-}
-.logIn-form label{
-    font-size: 18px;
-}
+/* common part  */
 
 
-.register-form input[type='email']::placeholder, .register-form input[type='password']::placeholder{
-
-    font-size: 18px;
-    padding-left: 5px;
-
-}
-.logIn-form input[type='email']::placeholder, .logIn-form input[type='password']::placeholder{
-
-    font-size: 18px;
-    padding-left: 5px;
-
-}
-
-.logIn-btn button{
-    width: 250px;
-    height: 40px;
-    border: none;
-    background-color: #0B77ED;
-    border-radius: 10px;
-    color: whitesmoke;
-    font-size: 18px;
-    cursor: pointer;
-
-}
-
-.loginPageContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 100px;
-}
 
 
-.errorMsg{
-    font-size: 17px;
-    font-weight: 600;
-    color: red;
-}
 
-.google-login-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
 
-.singInTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
+/* phone responsive  */
 
-.google-icon img{
-    border-radius: 50%;
-    border: 5px solid whitesmoke;
-    cursor: pointer;
+@media only screen and (max-width:788px) {
+
+    .logIn-image-container{
+        display: none;
+    }
+
+
+
 }

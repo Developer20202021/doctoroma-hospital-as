@@ -40,11 +40,12 @@ console.log(data);
             <div className="service-header-image">
                 <div className="service-h-image">
                     <img src={data?.imageUrl}  alt="" />
-                </div>
-            
-                <div className="service-name">
+                    <div className="service-name">
                     <h2>{data?.serviceName}</h2>
                 </div>
+                </div>
+            
+               
 
 
             </div>
